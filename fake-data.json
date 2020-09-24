@@ -1,0 +1,98 @@
+[
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-76.99699401855469, -12.18584458121737]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-76.96008682250977, -12.162855874337241]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-76.94429397583008, -12.19725429486196]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-77.0199966430664, -12.064334351194189]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-76.99373245239258, -12.084981563528286]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-77.01364517211914, -12.107641304316942]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-77.07183837890625, -12.06634878342498]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-77.05106735229491, -12.045364372263712]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-77.08402633666992, -12.02370674032321]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-77.0500373840332, -12.08414227699703]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-77.00832366943358, -11.997849609701962]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {},
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-77.00094223022461, -11.975516455366334]
+    }
+  }
+]
