@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { Marker, Popup } from "react-leaflet";
 // import IconLocation from "./iconLocation";
 import L from "leaflet";
-import Icon from "../../public/vercel.svg";
+import Icon from "../../assets/venue_location_icon.svg";
 
 export default function Markets({ tasks = [] }) {
   useEffect(() => {

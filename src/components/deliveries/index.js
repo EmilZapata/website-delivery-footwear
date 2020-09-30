@@ -1,12 +1,12 @@
 import React from "react";
 
-import { useStoreActions } from "easy-peasy";
+// import { useStoreActions } from "easy-peasy";
 
-export default function Delivery({ listTask = [] }) {
+export default function Deliveries({ listTask = [] }) {
   // Actions to EasyPeasy
-  const _actionSelectTask = useStoreActions(
-    (state) => state.taskDelivery.selectTask
-  );
+  // const _actionSelectTask = useStoreActions(
+  //   (state) => state.taskDelivery.selectTask
+  // );
   return (
     <>
       <div className="delivery-root">
@@ -14,13 +14,15 @@ export default function Delivery({ listTask = [] }) {
           <div
             key={index}
             className="delivery-task"
-            onClick={() => _actionSelectTask(task)}
+            onClick={() => {
+              console.log({ task });
+            }}
           >
             Prueba
           </div>
         ))}
       </div>
-      <style jsx>{`
+      {/* <style jsx>{`
         .delivery-root {
           padding-bottom: 20px;
         }
@@ -30,7 +32,7 @@ export default function Delivery({ listTask = [] }) {
           border-radius: 10px;
           margin-top: 10px;
         }
-      `}</style>
+      `}</style> */}
     </>
   );
 }
