@@ -1,15 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import { Provider } from "react-redux";
+import { createStore } from "redux";
 import * as serviceWorker from "./serviceWorker";
 import Pages from "./pages";
 import "leaflet/dist/leaflet.css";
 import "./styleGlobal.css";
 
+import storeApp from "./redux";
+
+let store = createStore(storeApp);
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Pages />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <Pages />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById("root")
 );
 

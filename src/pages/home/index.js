@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
+import { connect } from "react-redux";
 import Deliveries from "../../components/deliveries";
 import MapLeafLet from "../../components/map-leaflet";
 import DateFake from "./fake-data.json";
 
 import "./index.scss";
 
-export default function PageHome() {
+const PageHome = () => {
   const [dataDeliveries, setDataDeliveries] = useState([]);
 
   useEffect(() => {
     setDataDeliveries(
       DateFake.map((data) => ({
         position: {
-          lat: data.geometry.coordinates[0],
-          lng: data.geometry.coordinates[1],
+          lng: data.geometry.coordinates[0],
+          lat: data.geometry.coordinates[1],
         },
       }))
     );
@@ -29,4 +30,20 @@ export default function PageHome() {
       </section>
     </main>
   );
-}
+};
+
+const mapStateToProps = (state) => {
+  return {
+    // todos: getVisibleTodos(state.todos, state.visibilityFilter),
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    // onTodoClick: (id) => {
+    //   dispatch(toggleTodo(id));
+    // },
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(PageHome);
