@@ -3,14 +3,12 @@ import { connect } from "react-redux";
 import Deliveries from "../../components/deliveries";
 import MapLeafLet from "../../components/map-leaflet";
 import DateFake from "./fake-data.json";
-
+import { addDeliveries } from "../../redux/actions";
 import "./index.scss";
 
-const PageHome = () => {
-  const [dataDeliveries, setDataDeliveries] = useState([]);
-
+const PageHome = ({ delivery, actionAddDeliveries }) => {
   useEffect(() => {
-    setDataDeliveries(
+    actionAddDeliveries(
       DateFake.map((data) => ({
         position: {
           lng: data.geometry.coordinates[0],
@@ -19,14 +17,14 @@ const PageHome = () => {
       }))
     );
   }, []);
-  console.log({ DateFake });
+
   return (
     <main>
       <section className="sectionDeliveries">
-        <Deliveries listTask={dataDeliveries} />
+        <Deliveries listTask={delivery.all} />
       </section>
       <section className="sectionMapLeafLet">
-        <MapLeafLet deliveries={dataDeliveries} />
+        <MapLeafLet deliveries={delivery.all} />
       </section>
     </main>
   );
@@ -34,15 +32,13 @@ const PageHome = () => {
 
 const mapStateToProps = (state) => {
   return {
-    // todos: getVisibleTodos(state.todos, state.visibilityFilter),
+    delivery: state.delivery,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    // onTodoClick: (id) => {
-    //   dispatch(toggleTodo(id));
-    // },
+    actionAddDeliveries: (deliveries) => dispatch(addDeliveries(deliveries)),
   };
 };
 
