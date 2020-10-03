@@ -1,9 +1,37 @@
 .delivery-root {
+  overflow: auto;
   padding-bottom: 20px;
+  flex: 1;
   .delivery-task {
-    height: 50px;
-    border: 1px solid yellow;
+    // height: 50px;
+    border: 1px solid black;
     border-radius: 10px;
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    &-name {
+      margin-left: 8px;
+    }
+
+    &-direction {
+      margin-left: 8px;
+    }
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      height: 25px;
+      margin-bottom: 5px;
+      button {
+        border-width: 0;
+        border-radius: 5px;
+        background-color: #f5222d;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+      }
+    }
   }
 }

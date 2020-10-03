@@ -2,12 +2,13 @@ import L from "leaflet";
 
 const IconLocation = L.icon({
   iconUrl: require("../../assets/venue_location_icon.svg"),
-  iconSize: [38, 95],
-  iconAnchor: [22, 94],
-  popupAnchor: [-3, -76],
   shadowUrl: require("../../assets/venue_location_icon.svg"),
-  shadowSize: [68, 95],
-  shadowAnchor: [22, 94],
+  className: "leaflet-venue-icon",
+  iconAnchor: null,
+  shadowUrl: null,
+  shadowSize: null,
+  shadowAnchor: null,
+  iconSize: [64, 56],
 });
 
 export default IconLocation;

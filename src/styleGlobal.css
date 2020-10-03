@@ -1,3 +1,9 @@
 body {
   margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+#root-modal {
+  position: relative;
+  z-index: 9999;
 }

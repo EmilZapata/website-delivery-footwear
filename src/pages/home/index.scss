@@ -6,9 +6,29 @@ main {
 }
 
 .sectionDeliveries {
-  width: 40%;
+  height: 100%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+
+  .loadingDataDeliveries {
+    height: 64px;
+    display: flex;
+    background-color: #d9d9d9;
+    button {
+      background-color: #52c41a;
+      margin: auto;
+      border-width: 0;
+      font-size: 16px;
+      font-weight: 900;
+      color: white;
+      border-radius: 5px;
+      height: 36px;
+      cursor: pointer;
+    }
+  }
 }
 
 .sectionMapLeafLet {
-  width: 60%;
+  flex: 1;
 }

@@ -1,4 +1,4 @@
-import NAME_ACTIONS from "./constants";
+// import NAME_ACTIONS from "./constants";
 
 const initialState = {
   all: [],
